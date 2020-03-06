@@ -1,5 +1,5 @@
 {
-  "name": "Governance-System",
+  "name": "callisto-staking",
   "version": "1.0.0",
   "description": "Cold staking main contract destinated to handle sub-contracts only.",
   "main": "index.js",

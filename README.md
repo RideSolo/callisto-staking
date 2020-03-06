@@ -1,7 +1,7 @@
 
 # Callisto-staking
 
-The repo contains staking  contracts for Callisto Network
+The repo contains staking contracts for Callisto Network
 
 ## Overview
 
@@ -22,10 +22,10 @@ $ npm test
 
 ```
 
-To report the gas usage for each transactions use `--report` parameter:
+To report the gas consumtion for each transactions following the implemented functions use `--report` parameter:
 
 ```console
-$ nnpm run test-report
+$ npm run test-report
 
 ```
 
