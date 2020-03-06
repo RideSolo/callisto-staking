@@ -39,25 +39,24 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_who\",\"type\":\"address\"},{\"name\":\"_new_weight\",\"type\":\"uint256\"}],\"name\":\"update_voter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_who\",\"type\":\"address\"}],\"name\":\"is_voter\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/faycal/Desktop/projects/callisto-contracts/contracts/interfaces/ITreasuryVoting.sol\":\"ITreasuryVoting\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"/home/faycal/Desktop/projects/callisto-contracts/contracts/interfaces/ITreasuryVoting.sol\":{\"keccak256\":\"0x1066f9108b5e10dc9ae708d59d9f21430f608ab650c8a95c03198116aa13b851\",\"urls\":[\"bzzr://11949ba9f792aa88d5c08d6c8cbaa0381d84e7418d039b69b49f830bca4f2ead\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.5.8;\n\ninterface ITreasuryVoting \n{\n    function update_voter(address _who, uint _new_weight) external;\n    function is_voter(address _who) external view returns (bool);\n}\n",
-  "sourcePath": "/home/faycal/Desktop/projects/callisto-contracts/contracts/interfaces/ITreasuryVoting.sol",
+  "sourcePath": "/home/faycal/callisto-staking/contracts/interfaces/ITreasuryVoting.sol",
   "ast": {
-    "absolutePath": "/home/faycal/Desktop/projects/callisto-contracts/contracts/interfaces/ITreasuryVoting.sol",
+    "absolutePath": "/home/faycal/callisto-staking/contracts/interfaces/ITreasuryVoting.sol",
     "exportedSymbols": {
       "ITreasuryVoting": [
-        2667
+        1583
       ]
     },
-    "id": 2668,
+    "id": 1584,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2652,
+        "id": 1568,
         "literals": [
           "solidity",
           "^",
@@ -65,7 +64,7 @@
           ".8"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:8"
+        "src": "0:23:7"
       },
       {
         "baseContracts": [],
@@ -73,9 +72,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2667,
+        "id": 1583,
         "linearizedBaseContracts": [
-          2667
+          1583
         ],
         "name": "ITreasuryVoting",
         "nodeType": "ContractDefinition",
@@ -83,23 +82,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 2659,
+            "id": 1575,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "update_voter",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2657,
+              "id": 1573,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2654,
+                  "id": 1570,
                   "name": "_who",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2659,
-                  "src": "80:12:8",
+                  "scope": 1575,
+                  "src": "80:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -107,10 +106,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2653,
+                    "id": 1569,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "80:7:8",
+                    "src": "80:7:7",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -122,11 +121,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 2656,
+                  "id": 1572,
                   "name": "_new_weight",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2659,
-                  "src": "94:16:8",
+                  "scope": 1575,
+                  "src": "94:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -134,10 +133,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2655,
+                    "id": 1571,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "94:4:8",
+                    "src": "94:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -147,16 +146,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "79:32:8"
+              "src": "79:32:7"
             },
             "returnParameters": {
-              "id": 2658,
+              "id": 1574,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "120:0:8"
+              "src": "120:0:7"
             },
-            "scope": 2667,
-            "src": "58:63:8",
+            "scope": 1583,
+            "src": "58:63:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -164,23 +163,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 2666,
+            "id": 1582,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "is_voter",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2662,
+              "id": 1578,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2661,
+                  "id": 1577,
                   "name": "_who",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2666,
-                  "src": "144:12:8",
+                  "scope": 1582,
+                  "src": "144:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -188,10 +187,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2660,
+                    "id": 1576,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "144:7:8",
+                    "src": "144:7:7",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -202,19 +201,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "143:14:8"
+              "src": "143:14:7"
             },
             "returnParameters": {
-              "id": 2665,
+              "id": 1581,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2664,
+                  "id": 1580,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2666,
-                  "src": "181:4:8",
+                  "scope": 1582,
+                  "src": "181:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -222,10 +221,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 2663,
+                    "id": 1579,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "181:4:8",
+                    "src": "181:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -235,33 +234,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "180:6:8"
+              "src": "180:6:7"
             },
-            "scope": 2667,
-            "src": "126:61:8",
+            "scope": 1583,
+            "src": "126:61:7",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 2668,
-        "src": "25:164:8"
+        "scope": 1584,
+        "src": "25:164:7"
       }
     ],
-    "src": "0:190:8"
+    "src": "0:190:7"
   },
   "legacyAST": {
-    "absolutePath": "/home/faycal/Desktop/projects/callisto-contracts/contracts/interfaces/ITreasuryVoting.sol",
+    "absolutePath": "/home/faycal/callisto-staking/contracts/interfaces/ITreasuryVoting.sol",
     "exportedSymbols": {
       "ITreasuryVoting": [
-        2667
+        1583
       ]
     },
-    "id": 2668,
+    "id": 1584,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2652,
+        "id": 1568,
         "literals": [
           "solidity",
           "^",
@@ -269,7 +268,7 @@
           ".8"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:8"
+        "src": "0:23:7"
       },
       {
         "baseContracts": [],
@@ -277,9 +276,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2667,
+        "id": 1583,
         "linearizedBaseContracts": [
-          2667
+          1583
         ],
         "name": "ITreasuryVoting",
         "nodeType": "ContractDefinition",
@@ -287,23 +286,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 2659,
+            "id": 1575,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "update_voter",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2657,
+              "id": 1573,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2654,
+                  "id": 1570,
                   "name": "_who",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2659,
-                  "src": "80:12:8",
+                  "scope": 1575,
+                  "src": "80:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -311,10 +310,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2653,
+                    "id": 1569,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "80:7:8",
+                    "src": "80:7:7",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -326,11 +325,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 2656,
+                  "id": 1572,
                   "name": "_new_weight",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2659,
-                  "src": "94:16:8",
+                  "scope": 1575,
+                  "src": "94:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -338,10 +337,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2655,
+                    "id": 1571,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "94:4:8",
+                    "src": "94:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -351,16 +350,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "79:32:8"
+              "src": "79:32:7"
             },
             "returnParameters": {
-              "id": 2658,
+              "id": 1574,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "120:0:8"
+              "src": "120:0:7"
             },
-            "scope": 2667,
-            "src": "58:63:8",
+            "scope": 1583,
+            "src": "58:63:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -368,23 +367,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 2666,
+            "id": 1582,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "is_voter",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2662,
+              "id": 1578,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2661,
+                  "id": 1577,
                   "name": "_who",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2666,
-                  "src": "144:12:8",
+                  "scope": 1582,
+                  "src": "144:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -392,10 +391,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2660,
+                    "id": 1576,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "144:7:8",
+                    "src": "144:7:7",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -406,19 +405,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "143:14:8"
+              "src": "143:14:7"
             },
             "returnParameters": {
-              "id": 2665,
+              "id": 1581,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2664,
+                  "id": 1580,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2666,
-                  "src": "181:4:8",
+                  "scope": 1582,
+                  "src": "181:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -426,10 +425,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 2663,
+                    "id": 1579,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "181:4:8",
+                    "src": "181:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -439,28 +438,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "180:6:8"
+              "src": "180:6:7"
             },
-            "scope": 2667,
-            "src": "126:61:8",
+            "scope": 1583,
+            "src": "126:61:7",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 2668,
-        "src": "25:164:8"
+        "scope": 1584,
+        "src": "25:164:7"
       }
     ],
-    "src": "0:190:8"
+    "src": "0:190:7"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.8+commit.23d335f2.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.22",
-  "updatedAt": "2020-02-23T11:15:37.541Z",
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2020-03-06T15:43:30.728Z",
   "devdoc": {
     "methods": {}
   },
